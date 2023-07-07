@@ -7,27 +7,94 @@
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+    
+    /*p.hamlet{
+        background-color: antiquewhite;*/
+    
+    /*
+    #play span {
+      background-color:yellow ;
+    }
+    */
+    .centered-text {
+      text-align: center;
+    }
+  </style>
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1 class="centered-text">Rush Hour 3 | Yu and Mi  </h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="https://rhuyu.github.io/portal/" target="_blank">Back to Portal</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
-     
-   <main class="wrapper">
-    <p>Content goes here</p>
+    
+        <main class="wrapper">
+          <header>
+            <h2 class="centered-text"><u> Welcome to a script featuring a scene from Rush Hour 3!</u></h2>
+            <p class="centered-text">Here we have a demonstration of how we can highlight only certain actor's lines by implementing javascript. This is done by assigning each actor's lines with a data attribute and creating a function that triggers an event to highlight certain sets of lines while changing the other actor's lines back to normal!</p>
+            <h3 class="centered-text">Click on any of the actor's lines and watch as the corrolating lines highlight!</h3><br>
+          </header>
+    <div id="play">
+        <p><span data-actor="yu">Master Yu: May I help you?</span></P>
+
+        <p><span data-actor="carter">James Carter: We'll be asking the questions old man. Who are you?</span></P>
+
+        <p><span data-actor="yu">Master Yu: Yu.</span></p>
+
+        <p><span data-actor="carter">James Carter: No, not me. You.</span></P>
+
+        <p><span data-actor="yu">Master Yu: Yes, I'm Yu.</span></P>
+
+        <p><span data-actor="carter">James Carter: Just answer the damn question! Who are you?</span></P>
+
+        <p><span data-actor="carter">James Carter: Are you deaf?</span></P>
+
+        <p><span data-actor="yu">Master Yu: No. Yu is blind.</span></P>
+
+        <p><span data-actor="carter">James Carter:I'm not blind. You blind.</span></P>
+
+        <p><span data-actor="yu">Master Yu: That is what I just said.</span></P>
+
+        <p><span data-actor="carter">James Carter:You just said what?</span></P>
+
+        <p><span data-actor="yu">Master Yu: I did not say what, I said Yu.</span></P>
+
+        <p><span data-actor="carter">James Carter:That's what I'm asking you.</span></P>
+
+        <p><span data-actor="yu">Master Yu: And Yu was answering.</span></P>
+
+        <p><span data-actor="carter">James Carter: Shut up!, You!</span></P>
+
+        <p><span data-actor="yu">Master Yu: Yes?</span></P>
+
+        <p><span data-actor="carter">James Carter: Not you. Him! What's your name?</span></P>
+
+        <p><span data-actor="mi">Mi: Mi.</span></P>
+
+        <p><span data-actor="carter">James Carter: Yes, you.</span></P>
+
+        <p><span data-actor="mi">Mi: I'm Mi.</span></P>
+
+        <p><span data-actor="yu">Master Yu: He's Mi and I'm Yu.</span></P>
+
+        <p><span data-actor="carter">James Carter: And I'm about to whoop your old ass man because I am sick of playing games! You, me? Everybody's ass around here!</span></P>
+    </div>
      <footer>
-      <p><small>&copy; 2021 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+      <p><small>&copy; 2023 by 
+          Randy Huynh, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
      </p>
     </footer>
   </main>
   <script src="js/main.js"></script>
+  <script src="js/dom-play.js"></script>
  </body>
 </html>
